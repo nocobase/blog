@@ -1,7 +1,7 @@
 ---
 author: Chaojie Zhang
 pubDatetime: 2023-09-20T15:22:00Z
-title: 第一篇文档
+title: First Blog
 postSlug: this-is-first-blog
 featured: true
 draft: false
@@ -11,90 +11,86 @@ ogImage: ""
 description: hahahah
 ---
 
-![](https://www.nocobase.com/images/demo/11.png)
+## We are hiring
 
-**注意:** 📌
+We are looking for full-time, remote product design and development colleagues to join the team. If you have a strong interest in NocoBase, please feel free to email us at hello@nocobase.com.
 
-NocoBase 正处在早期开发阶段，可能变动频繁，请谨慎用于生产环境。
+## What is NocoBase
 
-## 我们在招聘
+NocoBase is a scalability-first, open-source no-code development platform. No programming required, build your own collaboration platform, management system with NocoBase in hours.
 
-我们在寻找全职、远程的产品设计、开发、测试的新同事加入团队，如果你对 NocoBase 有强烈的兴趣，欢迎给我们发邮件：hello@nocobase.com
+Homepage:
+https://www.nocobase.com/
 
-## NocoBase 是什么
+Online Demo:
+https://demo.nocobase.com/new
 
-NocoBase 是一个极易扩展的开源无代码开发平台。
-无需编程，使用 NocoBase 搭建自己的协作平台、管理系统，只需要几个小时。
+Documents:
+https://docs.nocobase.com/
 
-中文官网：
-https://cn.nocobase.com/
+Contact Us:
+hello@nocobase.com
 
-在线体验：
-https://demo-cn.nocobase.com/new
+## Who is NocoBase for
 
-文档：
-https://docs-cn.nocobase.com/
+NocoBase is designed for you if you have the following needs.
 
-## 适用场景
+- Develop an internal management system
+- Meet most of your business needs with no-code development
+- No-code development is simple enough for non-developers; flexible enough to be close to native development
+- Can be very easy to extend
+- Private deployment with full control of code and data
+- Free to use or pay for more technical support
 
-如果你有以下需求，NocoBase 就是为你设计的：
+## Why NocoBase is different
 
-- 开发组织内部管理系统
-- 通过无代码开发，满足大部分业务需求
-- 无代码开发在操作上足够简单，满足非开发人员；在功能上足够灵活，接近原生开发
-- 可以非常方便的进行扩展开发
-- 私有部署，掌控全部代码和数据
-- 可免费使用，也可以付费获得更多技术支持
+### 1. Separate "data structure" and "user interface"
 
-## 与众不同之处
+Most form-, table-, or process-driven codeless products create data structures directly in the user interface, such as Airtable, where adding a new column to a table is adding a new field. This has the advantage of simplicity of use, but the disadvantage of limited functionality and flexibility to meet the needs of more complex scenarios.
 
-### 1. “数据结构”与“使用界面”分离
-
-多数以表单、表格或者流程驱动的无代码产品都是在使用界面上直接创建数据结构，比如 Airtable 在表格里新增一列就是新增一个字段。这样的好处是使用简单，不足是功能和灵活性受限，难以满足较复杂场景的需求。
-
-NocoBase 采用数据结构与使用界面分离的设计思路，可以为数据表创建任意数量、任意形态的区块（数据视图），每个区块里可以定义不同的样式、文案、操作。这样既兼顾了无代码的简单操作，又具备了原生开发的灵活性。
+NocoBase adopts the design idea of separating the data structure from the user interface, allowing you to create any number of blocks (data views) for the data collections, with different type, styles, content, and actions in each block. This takes into account the simplicity of codeless operation, but also the flexibility like native development.
 
 ![2.collection-block.png](https://nocobase.oss-cn-beijing.aliyuncs.com/25506f38365436d11847b32fc8533bc9.png)
 
-### 2. 所见即所得
+### 2. What you see is what you get
 
-NocoBase 可以开发复杂和有特色的业务系统，但这并不意味着需要复杂和专业的操作。只需一次点击，就可以在使用界面上显示出配置选项，这意味着具备系统配置权限的管理员可以用所见即所得的操作方式，直接配置用户的使用界面。
+NocoBase enables the development of complex and distinctive business systems, but this does not mean that complex and specialized operations are required. With a single click, configuration options can be displayed on the usage interface, which means that administrators with system configuration rights can configure the user interface directly with WYSIWYG operations.
 
 ![2.user-root.gif](https://nocobase.oss-cn-beijing.aliyuncs.com/7991441ff35f05c49e0d72c2a23fa33b.gif)
 
-### 3. 功能即插件
+### 3. Everything is a plugin
 
-NocoBase 采用插件化架构，所有新功能都可以通过开发和安装插件来实现。未来我们将搭建插件市场，扩展功能就像在手机上安装 APP 一样简单。
+NocoBase adopts plugin architecture, all new features can be implemented by developing and installing plugins. In the future, we will build a plug-in marketplace where extending functionality is as easy as installing an APP on your phone.
 
 ![](https://www.nocobase.com/images/NocoBaseMindMapLite.png)
 
-[点此查看完整图片](https://www.nocobase.com/images/NocoBaseMindMap.png)
+[Click to view the full image](https://www.nocobase.com/images/NocoBaseMindMap.png)
 
-## 商业服务
+## Business Services
 
-如果你需要商业版本和商业服务，欢迎通过邮件联系我们：hello@nocobase.com
+If you need commercial version and commercial services, please feel free to contact us by email: hello@nocobase.com
 
-也可以添加我们的微信，沟通商业合作或者加入用户交流群：
+Also by WeChat：
 
 ![](https://www.nocobase.com/images/wechat.png)
 
-## 安装
+## Installation
 
-NocoBase 支持三种安装方式：
+NocoBase supports three installation methods:
 
-- <a target="_blank" href="https://docs-cn.nocobase.com/welcome/getting-started/installation/docker-compose">Docker 安装（推荐）</a>
+- <a target="_blank" href="https://docs.nocobase.com/welcome/getting-started/installation/docker-compose">Installing With Docker (👍Recommended)</a>
 
-  适合无代码场景，不需要写代码。升级时，下载最新镜像并重启即可。
+  Suitable for no-code scenarios, no code to write. When upgrading, just download the latest image and reboot.
 
-- <a target="_blank" href="https://docs-cn.nocobase.com/welcome/getting-started/installation/create-nocobase-app">create-nocobase-app 安装</a>
+- <a target="_blank" href="https://docs.nocobase.com/welcome/getting-started/installation/create-nocobase-app">Installing from create-nocobase-app CLI</a>
 
-  项目的业务代码完全独立，支持低代码开发。
+  The business code of the project is completely independent and supports low-code development.
 
-- <a target="_blank" href="https://docs-cn.nocobase.com/welcome/getting-started/installation/git-clone">Git 源码安装</a>
+- <a target="_blank" href="https://docs.nocobase.com/welcome/getting-started/installation/git-clone">Installing from Git source code</a>
 
-  如果你想体验最新未发布版本，或者想参与贡献，需要在源码上进行修改、调试，建议选择这种安装方式，对开发技术水平要求较高，如果代码有更新，可以走 git 流程拉取最新代码。
+  If you want to experience the latest unreleased version, or want to participate in the contribution, you need to make changes and debug on the source code, it is recommended to choose this installation method, which requires a high level of development skills, and if the code has been updated, you can git pull the latest code.
 
-## 协议
+## License
 
-- [内核](https://github.com/nocobase/nocobase/tree/main/packages/core) 采用 [Apache 2.0 协议](./LICENSE-APACHE-2.0)；
-- [插件](https://github.com/nocobase/nocobase/tree/main/packages/plugins) 采用 [AGPL 3.0 协议](./LICENSE-AGPL)。
+- [Core packages](https://github.com/nocobase/nocobase/tree/main/packages/core) are [Apache 2.0 licensed](./LICENSE-APACHE-2.0).
+- [Plugins packages](https://github.com/nocobase/nocobase/tree/main/packages/plugins) are [AGPL 3.0 licensed](./LICENSE-AGPL).
