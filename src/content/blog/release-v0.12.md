@@ -34,7 +34,7 @@ For more details, see [Git source upgrade guide](https://docs.nocobase.com/welco
 
 ### Upgrading a create-nocobase-app installation
 
-Redownload the new version via `yarn create` and update the .env configuration, see [major version upgrade guide](/welcome/getting-started/upgrading/create-nocobase-app#Major version upgrade) for more details.
+Redownload the new version via `yarn create` and update the .env configuration, see [major version upgrade guide](https://docs-cn.nocobase.com/welcome/getting-started/upgrading/create-nocobase-app) for more details.
 
 ## Incompatible changes
 
