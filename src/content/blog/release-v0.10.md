@@ -48,7 +48,7 @@ description: ""
 
 ### Upgrading for Docker compose
 
-No change, upgrade reference [Upgrading for Docker compose](/welcome/getting-started/upgrading/docker-compose)
+No change, upgrade reference [Upgrading for Docker compose](https://docs.nocobase.com/welcome/getting-started/upgrading/docker-compose)
 
 ### Upgrading for Git source code
 
@@ -63,11 +63,11 @@ yarn rimraf -rf "./packages/*/*/{lib,esm,es,dist,node_modules}"
 yarn rimraf -rf node_modules
 ```
 
-See [Upgrading for Git source code](/welcome/getting-started/upgrading/git-clone) for more details
+See [Upgrading for Git source code](https://docs.nocobase.com/welcome/getting-started/upgrading/git-clone) for more details
 
 ### Upgrading for create-nocobase-app
 
-It is recommended that `yarn create` re-download the new version and modify the `.env` configuration, for more details refer to [major version upgrade guide](/welcome/getting-started/upgrading/create-nocobase-app#major-upgrade)
+It is recommended that `yarn create` re-download the new version and modify the `.env` configuration, for more details refer to [major version upgrade guide](https://docs.nocobase.com/welcome/getting-started/upgrading/create-nocobase-app#major-upgrade)
 
 ## Upcoming deprecated and potentially incompatible changes
 

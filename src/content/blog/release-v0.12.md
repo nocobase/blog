@@ -19,7 +19,7 @@ description: ""
 
 ### Upgrade of Docker installation
 
-No change, refer to [Docker Image Upgrade Guide](/welcome/getting-started/upgrading/docker-compose) for upgrade.
+No change, refer to [Docker Image Upgrade Guide](https://docs.nocobase.com/welcome/getting-started/upgrading/docker-compose) for upgrade.
 
 ### Upgrading source code installation
 
@@ -30,7 +30,7 @@ git pull # Pull the new source code.
 yarn clean # Clear the cache.
 ```
 
-For more details, see [Git source upgrade guide](/welcome/getting-started/upgrading/git-clone).
+For more details, see [Git source upgrade guide](https://docs.nocobase.com/welcome/getting-started/upgrading/git-clone).
 
 ### Upgrading a create-nocobase-app installation
 

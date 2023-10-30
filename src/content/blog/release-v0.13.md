@@ -25,6 +25,6 @@ description: ""
 
 ## Upgrading
 
-- [Upgrading for Docker compose](/welcome/getting-started/upgrading/docker-compose)
-- [Upgrading for create-nocobase-app](/welcome/getting-started/upgrading/create-nocobase-app)
-- [Upgrading for Git source code](/welcome/getting-started/upgrading/git-clone)
+- [Upgrading for Docker compose](https://docs.nocobase.com/welcome/getting-started/upgrading/docker-compose)
+- [Upgrading for create-nocobase-app](https://docs.nocobase.com/welcome/getting-started/upgrading/create-nocobase-app)
+- [Upgrading for Git source code](https://docs.nocobase.com/welcome/getting-started/upgrading/git-clone)

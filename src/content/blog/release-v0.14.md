@@ -90,4 +90,4 @@ More see full version of [nocobase.conf](https://github.com/nocobase/nocobase/bl
 
 ## Plugin development guide
 
-[Develop the first plugin](/development/your-fisrt-plugin)
+[Develop the first plugin](https://docs.nocobase.com/development/your-fisrt-plugin)
