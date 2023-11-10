@@ -1,0 +1,39 @@
+name: scp files
+
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: "18"
+    - run: yarn install
+    - name: Build
+      run: yarn build
+    - name: Set tags
+      id: set-tags
+      run: |
+        if [[ "${{ github.ref_name }}" == "main" ]]; then
+          echo "::set-output name=tags::${{ github.ref_name }}"
+        else
+          echo "::set-output name=tags::pr-${{ github.event.pull_request.number }}"
+        fi
+    - name: copy files via ssh - ${{ steps.set-tags.outputs.tags }}
+      uses: appleboy/scp-action@v0.1.4
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT }}
+        source: "dist/*"
+        target: ${{ secrets.TARGET }}/${{ steps.set-tags.outputs.tags }}
