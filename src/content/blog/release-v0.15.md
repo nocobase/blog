@@ -4,7 +4,7 @@ pubDatetime: 2023-11-10T09:13:00Z
 title: "NocoBase 0.15：New plugin manager interface"
 postSlug: release-v0.15
 # featured: true
-draft: true
+draft: false
 tags:
   - release
 ogImage: ""
