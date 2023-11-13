@@ -84,4 +84,4 @@ navigate(`${basePath}/2`);
 For more information, see the [plugin settings manager](https://docs.nocobase.com/development/client/plugin-settings).
 
 ## Changelog
-For a complete changelog, please refer to [Changelog](https://github.com/nocobase/nocobase/blob/main/CHANGELOG.md)。
+For a complete changelog, please refer to [Changelog](https://github.com/nocobase/nocobase/blob/main/CHANGELOG.md).
