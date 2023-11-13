@@ -1,7 +1,7 @@
 ---
 author: Lin Chen
-pubDatetime: 2023-11-10T09:13:00Z
-title: "NocoBase 0.15：New plugin manager interface"
+pubDatetime: 2023-11-13T02:36:25.037Z
+title: "NocoBase 0.15：New plugin settings manager"
 postSlug: release-v0.15
 # featured: true
 draft: false
@@ -12,6 +12,8 @@ description: ""
 ---
 
 ## Features
+
+![Plugin settings manager](/content-static/psm.png)
 
 ## Breaking changes
 
@@ -58,18 +60,25 @@ class HelloPlugin extends Plugin {
 }
 ```
 
-If the plugin configuration page has a link jump inside, you need to make the corresponding changes, for example:
+Get the routing information corresponding to the pluginSettingsManager
 
-```tsx | pure
-navigate("/admin/settings/hello/tab1");
+```tsx
+const baseName = app.pluginSettingsManager.getRouteName('hello');
+// admin.settings.hello
+const basePath = app.pluginSettingsManager.getRoutePath('hello'); // /admin/settings.
+// /admin/settings/hello
 ```
 
-Now it needs to be:
+If there is a link jump inside the plugin configuration page, you need to change it accordingly, for example:
 
 ```tsx | pure
-import { useApp } from "@nocobase/client";
-const app = useApp();
-navigate(app.pluginSettingsManager.getRoutePath("hello")); // 当然也可以直接写 navigate('/admin/settings/hello');
+navigate('/admin/settings/hello/1').
+navigate('/admin/settings/hello/2');
+
+// This can be changed to
+const basePath = app.pluginSettingsManager.getRoutePath('hello');
+navigate(`${basePath}/1`);
+navigate(`${basePath}/2`);
 ```
 
-<!-- For more information, please refer to [Plugin configuration page](/development/client/settings-center). -->
+For more information, see the [plugin settings manager](https://docs.nocobase.com/development/client/plugin-settings).
