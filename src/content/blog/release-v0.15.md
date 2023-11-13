@@ -164,4 +164,4 @@ For more information, see the [plugin settings manager](https://docs.nocobase.co
 
 ## Changelog
 
-For a complete changelog, please refer to [Changelog](https://github.com/nocobase/nocobase/blob/main/CHANGELOG.md)。
+For a complete changelog, please refer to [Changelog](https://github.com/nocobase/nocobase/blob/main/CHANGELOG.md).
