@@ -369,10 +369,10 @@ const MyDesigner = props => {
 };
 ```
 
-Now it needs to be defined through `new SchemaInitializer()`, for example:
+Now it needs to be defined through `new SchemaSetting()`, for example:
 
 ```tsx
-const mySettings = new SchemaInitializer({
+const mySettings = new SchemaSetting({
   name: "MySettings",
   items: [
     {
