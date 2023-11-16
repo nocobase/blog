@@ -1,7 +1,7 @@
 ---
 author: Lin Chen
 pubDatetime: 2023-09-11T08:22:00Z
-title: "NocoBase 0.16: SchemaInitializer"
+title: "NocoBase 0.16: SchemaInitializer & SchemaSettings"
 postSlug: release-v0.16
 # featured: true
 draft: false
@@ -333,3 +333,119 @@ render({ style: { marginLeft: 8 } })
 ```
 
 More details can refer to the [SchemaInitializer documentation](https://client.docs.nocobase.com/client/schema-initializer).
+
+### Registration and Implementation of SchemaSettings
+
+Previously, `SchemaSettings` was written together with `Designer`, for example:
+
+```tsx
+const MyDesigner = props => {
+  return (
+    <div>
+      {/* ... others */}
+      <SchemaSettings
+        title={
+          <MenuOutlined
+            role="button"
+            aria-label={getAriaLabel("schema-settings")}
+            style={{ cursor: "pointer", fontSize: 12 }}
+          />
+        }
+      >
+        <SchemaSettings.SwitchItem
+          title={"Enable Header"}
+          onClick={() => {}}
+        ></SchemaSettings.SwitchItem>
+        <SchemaSettings.Divider />
+        <SchemaSettings.ModalItem
+          title={"xxx"}
+          schema={}
+          onSubmit={props.onSubmit}
+        ></SchemaSettings.ModalItem>
+      </SchemaSettings>
+      {/* ... others */}
+    </div>
+  );
+};
+```
+
+Now it needs to be defined through `new SchemaInitializer()`, for example:
+
+```tsx
+const mySettings = new SchemaInitializer({
+  name: "MySettings",
+  items: [
+    {
+      name: "enableHeader",
+      type: "switch",
+      componentProps: {
+        title: "Enable Header",
+        onClick: () => {},
+      },
+    },
+    {
+      name: "divider",
+      type: "divider",
+    },
+    {
+      name: "xxx",
+      type: "modal",
+      useComponentProps() {
+        const { onSubmit } = useSchemaDesigner();
+        return {
+          title: "xxx",
+          schema: {},
+          onSubmit,
+        };
+      },
+    },
+  ],
+});
+```
+
+More details can refer to the [SchemaSettings documentation](https://client.docs.nocobase.com/apis/schema-settings)。
+
+Then it needs to be registered to the App, for example:
+
+```tsx
+import { Plugin } from "@nocobase/client";
+
+class MyPlugin extends Plugin {
+  async load() {
+    this.app.schemaSettingsManager.add(mySettings);
+  }
+}
+```
+
+Finally, use it in `Designer`, for example:
+
+```diff
++import { useSchemaSettingsRender, SchemaDesignerProvider } from '@nocobase/client';
+
+const MyDesigner = (props) => {
++  const { render } = useSchemaSettingsRender(
++    fieldSchema['x-settings'] || 'MySettings',
++    fieldSchema['x-settings-props'],
++  );
+  return <div>
+    {/* ... others */}
++    <SchemaDesignerProvider onSubmit={props.onSubmit}>
++     {render(props)}
++    </SchemaDesignerProvider>
+-    <SchemaSettings title={
+-      <MenuOutlined
+-        role="button"
+-        aria-label={getAriaLabel('schema-settings')}
+-        style={{ cursor: 'pointer', fontSize: 12 }}
+-      />
+-    }>
+-      <SchemaSettings.SwitchItem title={'Enable Header'} onClick={() => {}}></SchemaSettings.SwitchItem>
+-      <SchemaSettings.Divider />
+-      <SchemaSettings.ModalItem title={'xxx'} schema={} onSubmit={props.onSubmit}></SchemaSettings.ModalItem>
+-    </SchemaSettings>
+    {/* ... others */}
+  </div>
+}
+```
+
+More usage instructions please refer to [SchemaSettings](https://client.docs.nocobase.com/apis/schema-settings)。
