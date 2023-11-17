@@ -11,6 +11,8 @@ ogImage: ""
 description: ""
 ---
 
+## Table of contents
+
 ## Breaking Changes
 
 ### Registration and Implementation of SchemaInitializer
@@ -448,4 +450,49 @@ const MyDesigner = (props) => {
 }
 ```
 
-More usage instructions please refer to [SchemaSettings](https://client.docs.nocobase.com/apis/schema-settings)。
+More usage instructions please refer to [SchemaSettings](https://client.docs.nocobase.com/apis/schema-settings).
+
+### Cache module (`@nocobase/cache`) usage update
+
+After refactoring, the cache module now encapsulated based on [node-cache-manager](https://github.com/node-cache-manager/node-cache-manager), implementing a centralized cache manager that integrates both memory and Redis. Additionally, it allows for extending and adding other cache methods easily. For more detailed usage instructions, please refer to [API documentation](https://docs.nocobase.com/api/cache).
+
+#### Cache creation method update
+
+Deprecated: Use `createCache` for cache creation.
+
+```ts
+import { createCache } from "@nocobase/cache";
+
+const cache = createCache();
+```
+
+Cache now managed by `CacheManager` and created with `app.cacheManager`.
+
+```ts
+const cache = await app.cacheManager.createCache({
+  name: "memory", // unique name of cache
+  store: "memory", // unique name of cache method
+  // other config
+  max: 2000,
+  ttl: 60 * 1000,
+});
+```
+
+#### Environment variables update
+
+Previous environment variables of cache required a JSON string for configuring.
+
+```bash
+CACHE_CONFIG={"storePackage":"cache-manager-fs-hash","ttl":86400,"max":1000}
+```
+
+New environment variables for configuring cache:
+
+```bash
+# Unique name of default cache method, memory or redis
+CACHE_DEFAULT_STORE=memory
+# Max number of items in memory cache
+CACHE_MEMORY_MAX=2000
+# Redis，optional
+CACHE_REDIS_URL=redis://localhost:6379
+```

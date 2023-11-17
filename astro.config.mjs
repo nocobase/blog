@@ -19,13 +19,13 @@ export default defineConfig({
   ],
   markdown: {
     remarkPlugins: [
-      remarkToc,
-      [
-        remarkCollapse,
-        {
-          test: "Table of contents",
-        },
-      ],
+      [remarkToc, { heading: "Table of contents" }],
+      // [
+      //   remarkCollapse,
+      //   {
+      //     // test: "Table of contents",
+      //   },
+      // ],
     ],
     shikiConfig: {
       theme: "one-dark-pro",
