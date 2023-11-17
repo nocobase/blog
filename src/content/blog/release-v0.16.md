@@ -15,6 +15,23 @@ description: ""
 
 ## Breaking Changes
 
+### Private app.addComponent Method
+
+The `app.addComponent` method has been made private and is no longer exposed externally. Components must now be registered using the `app.addComponents` method.
+
+### Delete `PluginManagerContext`
+
+```diff
+const MyProvider = props => {
+- const ctx = useContext(PluginManagerContext);
+return <div>
+- <PluginManagerContext.Provider value={{components: { ...ctx?.components }}}>
+  {/* ... */}
+- </PluginManagerContext.Provider>
+</div>
+}
+```
+
 ### Registration and Implementation of SchemaInitializer
 
 #### Definition method
@@ -281,7 +298,7 @@ class MyPlugin extends Plugin {
 
 #### Modification method
 
-以前是通过 `SchemaInitializerContext` 获取到全部的 `Initializers` 然后进行增删改。例如下面代码是为了往 `BlockInitializers` 中的 `media` 下添加 `Hello`：
+Previously, it was obtained through `SchemaInitializerContext` and then modified. For example, the following code is to add `Hello` to `media` under `BlockInitializers`:
 
 ```tsx | pure
 const items = useContext<any>(SchemaInitializerContext);
