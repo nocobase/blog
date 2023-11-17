@@ -1,7 +1,7 @@
 ---
 author: Lin Chen
-pubDatetime: 2023-09-11T08:22:00Z
-title: "NocoBase 0.16: SchemaInitializer & SchemaSettings"
+pubDatetime: 2023-11-17T08:22:00Z
+title: "NocoBase 0.16: SchemaInitializer, SchemaSettings and Cache"
 postSlug: release-v0.16
 # featured: true
 draft: false
@@ -14,23 +14,6 @@ description: ""
 ## Table of contents
 
 ## Breaking Changes
-
-### Private app.addComponent Method
-
-The `app.addComponent` method has been made private and is no longer exposed externally. Components must now be registered using the `app.addComponents` method.
-
-### Delete `PluginManagerContext`
-
-```diff
-const MyProvider = props => {
-- const ctx = useContext(PluginManagerContext);
-return <div>
-- <PluginManagerContext.Provider value={{components: { ...ctx?.components }}}>
-  {/* ... */}
-- </PluginManagerContext.Provider>
-</div>
-}
-```
 
 ### Registration and Implementation of SchemaInitializer
 
@@ -298,7 +281,7 @@ class MyPlugin extends Plugin {
 
 #### Modification method
 
-Previously, it was obtained through `SchemaInitializerContext` and then modified. For example, the following code is to add `Hello` to `media` under `BlockInitializers`:
+以前是通过 `SchemaInitializerContext` 获取到全部的 `Initializers` 然后进行增删改。例如下面代码是为了往 `BlockInitializers` 中的 `media` 下添加 `Hello`：
 
 ```tsx | pure
 const items = useContext<any>(SchemaInitializerContext);
