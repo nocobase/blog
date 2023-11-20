@@ -17,6 +17,17 @@ The previous version of cache has poor usability (only support memory cache), v0
 
 ## Breaking Changes
 
+### Node minimum version changed to 18
+Node v16 is no longer maintained, the minimum version has been changed to v18.
+
+```json
+{
+  "engines": {
+    "node": ">=18"
+  }
+}
+```
+
 ### Cache creation method update
 
 Deprecated: Use `createCache` for cache creation.
