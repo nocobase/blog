@@ -1,6 +1,6 @@
 ---
 author: Lin Chen
-pubDatetime: 2023-11-17T08:22:00Z
+pubDatetime: 2023-11-20T19:59:00Z
 title: "NocoBase 0.16: New cache manager"
 postSlug: release-v0.16
 # featured: true
