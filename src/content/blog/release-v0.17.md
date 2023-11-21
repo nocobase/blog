@@ -272,6 +272,13 @@ const FormBlockInitializer: FC<FormBlockInitializerProps> = props => {
 };
 ```
 
+#### Component changes
+
+- Removed `SchemaInitializer.itemWrap`, no longer need to wrap the `item` component.
+- `SchemaInitializer.Item` component changed to `SchemaInitializerItem` component, with no changes to the parameters.
+- `SchemaInitializer.ActionModal` component changed to `SchemaInitializerActionModal` component, with no changes to the parameters.
+- `SchemaInitializer.SwitchItem` component changed to `SchemaInitializer.Switch` component, with no changes to the parameters.
+
 #### Registration method
 
 Previously, it was registered through `SchemaInitializerProvider`. For example:
