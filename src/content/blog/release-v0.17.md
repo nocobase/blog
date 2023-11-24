@@ -32,7 +32,14 @@ return <div>
 }
 ```
 
-### Registration and Implementation of SchemaInitializer
+### SchemaInitializer
+
+#### Component changes
+
+- Removed `SchemaInitializer.itemWrap`, no longer need to wrap the `item` component.
+- `SchemaInitializer.Item` component changed to `SchemaInitializerItem` component, with no changes to the parameters.
+- `SchemaInitializer.ActionModal` component changed to `SchemaInitializerActionModal` component, with no changes to the parameters.
+- `SchemaInitializer.SwitchItem` component changed to `SchemaInitializer.Switch` component, with no changes to the parameters.
 
 #### Definition method
 
@@ -272,13 +279,6 @@ const FormBlockInitializer: FC<FormBlockInitializerProps> = props => {
 };
 ```
 
-#### Component changes
-
-- Removed `SchemaInitializer.itemWrap`, no longer need to wrap the `item` component.
-- `SchemaInitializer.Item` component changed to `SchemaInitializerItem` component, with no changes to the parameters.
-- `SchemaInitializer.ActionModal` component changed to `SchemaInitializerActionModal` component, with no changes to the parameters.
-- `SchemaInitializer.SwitchItem` component changed to `SchemaInitializer.Switch` component, with no changes to the parameters.
-
 #### Registration method
 
 Previously, it was registered through `SchemaInitializerProvider`. For example:
@@ -360,7 +360,14 @@ render({ style: { marginLeft: 8 } })
 
 More details can refer to the [SchemaInitializer documentation](https://client.docs.nocobase.com/client/schema-initializer).
 
-### Registration and Implementation of SchemaSettings
+### SchemaSettings
+
+#### Component Changes
+
+- `SchemaSettings` is changed to `SchemaSettingsDropdown`
+- `SchemaSettings.ComponentName` is changed to `SchemaSettingsComponentName`, for example, `SchemaSettings.ModalItem` is changed to `SchemaSettingsModalItem`, `SchemaSettings.Divider` is changed to `SchemaSettingsDivider`
+
+#### Definition Method Changes
 
 Previously, `SchemaSettings` was written together with `Designer`, for example:
 
