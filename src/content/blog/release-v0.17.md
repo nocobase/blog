@@ -89,7 +89,7 @@ In general, the parameters of `new SchemaInitializer()` refer to the previous ob
 - Add `componentProps`、`style` for configuring the properties and styles of `Component`.
 - Add `ItemsComponent` parameter for customized rendering of lists. The default is `SchemaInitializerItems`.
 - Add `itemsComponentProps`、`itemsComponentStyle` for configuring the properties and styles of `ItemsComponent`.
-- Add `noPopover` parameter to configure whether to display the `popover` effect.
+- Add `popover` parameter to configure whether to display the `popover` effect.
 - Add `useInsert` parameter for when the `insert` function needs to use hooks.
 - Change `dropdown` parameter to `popoverProps` and use `Popover` instead of `Dropdown`.
 - items parameter changes
