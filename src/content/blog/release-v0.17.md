@@ -24,7 +24,7 @@ This time, v0.17 has refactored the UI Schema designer-related SchemaInitializer
 
 To address the difficulty for users to get started, we have also reorganized various sections of the documentation:
 
-- [Plugin Development](https://docs-cn.nocobase.com/development) (completely revised and published)
+- [Plugin Development](https://docs.nocobase.com/development) (completely revised and published)
 - [API Reference / Client](https://client.docs.nocobase.com/core/application/application) (new section, already published)
 - User Manual (completely revised, will be released in the next one to two weeks)
 - Plugin List (new section, including introductions, usage, and extension development instructions for all existing plugins, will be released in the next one to two weeks)
