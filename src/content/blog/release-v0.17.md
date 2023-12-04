@@ -12,83 +12,83 @@ description: ""
 
 ## New Features
 
-In order to reduce development learning costs and provide a better front-end development experience, we have been refactoring the front-end kernel in phases over the past few months, including:
+To reduce development learning costs and provide a better frontend development experience, we have phased a reconstruction of the frontend core over the past few months, including:
 
 ![nocobase-client](/content-static/nocobase-client.png)
 
-This time v0.17 refactored the UI Schema Designer related SchemaInitializer and SchemaSettings
+This time, v0.17 has refactored the UI Schema designer-related SchemaInitializer and SchemaSettings.
 
-![](/content-static/SchemaInitializer.png)
+![SchemaInitializer](/content-static/SchemaInitializer.png)
 
-![](/content-static/SchemaSettings.png)
+![SchemaSettings](/content-static/SchemaSettings.png)
 
-In order to solve the problem of users' difficulty in getting started, we have also reorganized the documentation of each section
+To address the difficulty for users to get started, we have also reorganized various sections of the documentation:
 
-- [Plugin Development](https://docs-cn.nocobase.com/development) (fully revamped, released)
-- [API Reference / Client](https://client.docs-cn.nocobase.com/core/application/application) (new section, already released)
-- User's Manual (completely revamped, will be released in the next week or two)
-- Plugin List (new block, includes all existing plugins' introduction, usage, and instructions for extension development, will be released in the next week or two)
+- [Plugin Development](https://docs-cn.nocobase.com/development) (completely revised and published)
+- [API Reference / Client](https://client.docs.nocobase.com/core/application/application) (new section, already published)
+- User Manual (completely revised, will be released in the next one to two weeks)
+- Plugin List (new section, including introductions, usage, and extension development instructions for all existing plugins, will be released in the next one to two weeks)
 
-## Breaking Changes
+## Incompatible Changes
 
 ### Changes to SchemaInitializer
 
-- Added `SchemaInitializerManager` for registering `SchemaInitializer`.
-- Added `useSchemaInitializerRender()` instead of `render()` of `useSchemaInitializer()`.
-- New `useSchemaInitializerItem()` to get the context of the current initialized item.
-- New `SchemaInitializerItemGroup` component to be used as the default component for `type: 'itemGroup'`.
-- New `SchemaInitializerSubMenu` component, used as default for `type: 'subMenu'`.
-- New `SchemaInitializerDivider` component, used as default for `type: 'divider'`.
-- New `SchemaInitializerChildren` component for custom rendering of multiple list items
-- New `SchemaInitializerChild` component for custom rendering of a single list item
-- Changed `SchemaInitializerContext` duty change to hold the current initializer context
-- Changed `useSchemaInitializer()` responsibility to get the context of the current initializer
-- Change `function SchemaInitializer` to `class SchemaInitializer` for defining the initializer
-- Changed `SchemaInitializer` parameter.
-  - New `name` mandatory parameter for `x-initializer` value.
-  - New `Component` parameter for customized rendered buttons. Defaults to `SchemaInitializerButton`.
-  - New `componentProps`, `style` for configuring `Component` properties and styles.
-  - New `ItemsComponent` parameter for customizing the rendered list. Defaults to `SchemaInitializerItems`.
-  - New `itemsComponentProps`, `itemsComponentStyle` for configuring properties and styles of `ItemsComponent`.
-  - Added `popover` parameter to configure whether to show `popover` effect.
-  - New `useInsert` parameter for when the `insert` function needs to use hooks.
-  - Change Changed `dropdown` parameter to `popoverProps`, using `Popover` instead of `Dropdown`.
-- Changed `items` parameter of `SchemaInitializer`.
-  - Added `useChildren` function for dynamic control of child items.
-  - Added `componentProps` function for component's own properties.
-  - New `useComponentProps` function for dynamically handling component props.
-  - Changed Changed the `key` parameter to `name`, which is used to uniquely identify the list item.
-  - Changed changed `visible` parameter to `useVisible` function to dynamically control whether to display or not.
-  - Changed the `component` parameter to `Component` for rendering list items.
-- Changed `SchemaInitializer.Button` to `SchemaInitializerButton`, which is the default value for the Component parameter of the SchemaInitializer;
-- Change `SchemaInitializer.Item` to `SchemaInitializerItem`, with no changes to the parameters;
-- Change `SchemaInitializer.ActionModal` to `SchemaInitializerActionModal` with no change in parameters;
-- Change `SchemaInitializer.SwitchItem` to `SchemaInitializer.Switch`, parameters unchanged.
-- Remove `SchemaInitializerProvider` and replace with `SchemaInitializerManager`.
-- Remove `SchemaInitializer.itemWrap`, no need to wrap the `item` component anymore;
+- Added `SchemaInitializerManager` for registering `SchemaInitializer`
+- Added `useSchemaInitializerRender()` to replace the original `useSchemaInitializer()` `render()`
+- Added `useSchemaInitializerItem()` for obtaining the context of the current initialization item
+- Added `SchemaInitializerItemGroup` component as the default component for `type: 'itemGroup'`
+- Added `SchemaInitializerSubMenu` component as the default component for `type: 'subMenu'`
+- Added `SchemaInitializerDivider` component as the default component for `type: 'divider'`
+- Added `SchemaInitializerChildren` component for custom rendering of multiple list items
+- Added `SchemaInitializerChild` component for custom rendering of a single list item
+- Changed the responsibilities of `SchemaInitializerContext` for storing the context of the current initializer
+- Changed the responsibilities of `useSchemaInitializer()` for obtaining the context of the current initializer
+- Changed `function SchemaInitializer` to `class SchemaInitializer` for defining initializer
+- Changed parameters of `SchemaInitializer`
+  - Added `name` required parameter for the value of `x-initializer`
+  - Added `Component` parameter for custom rendering of the button. Default is `SchemaInitializerButton`.
+  - Added `componentProps`, `style` for configuring the properties and style of `Component`
+  - Added `ItemsComponent` parameter for custom rendering of the list. Default is `SchemaInitializerItems`.
+  - Added `itemsComponentProps`, `itemsComponentStyle` for configuring the properties and style of `ItemsComponent`
+  - Added `popover` parameter for configuring whether to display the `popover` effect
+  - Added `useInsert` parameter for when the `insert` function needs to use hooks
+  - Changed `dropdown` parameter to `popoverProps`, using `Popover` instead of `Dropdown`
+- Changed parameters of `items` for `SchemaInitializer`
+  - Added `useChildren` function for dynamically controlling child items
+  - Added `componentProps` function for the properties of the component itself
+  - Added `useComponentProps` function for dynamically processing the props of the component
+  - Changed `key` parameter to `name` for the unique identification of list items
+  - Changed `visible` parameter to `useVisible` function for dynamically controlling whether to display
+  - Changed `component` parameter to `Component` for rendering list items
+- Changed `SchemaInitializer.Button` to `SchemaInitializerButton`, the default value for the Component parameter of SchemaInitializer
+- Changed `SchemaInitializer.Item` to `SchemaInitializerItem`, with unchanged parameters
+- Changed `SchemaInitializer.ActionModal` to `SchemaInitializerActionModal`, with unchanged parameters
+- Changed `SchemaInitializer.SwitchItem` to `SchemaInitializer.Switch`, with unchanged parameters
+- Deleted `SchemaInitializerProvider`, replaced by `SchemaInitializerManager`
+- Deleted `SchemaInitializer.itemWrap`, no longer need to wrap the `item` component
 
 ### Changes to SchemaSettings
 
-- Added `SchemaSettingsManager` for registering `SchemaSettings`.
+- Added `SchemaSettingsManager` for registering `SchemaSettings`
 - Added `useSchemaSettingsItem()`
 - Added `useSchemaSettingsRender()`
-- New `x-settings` parameter to configure the schema's settings.
-- New `x-toolbar` parameter to configure the schema's toolbar.
-- New `SchemaToolbar` component for customizing the schema's toolbar.
-- New `useSchemaToolbarRender()`, replacing `useDesigner()`.
-- Changed `function SchemaSettings` to `class SchemaSettings` for defining setters.
-- Change `SchemaSettings` to `SchemaSettingsDropdown`.
+- Added `x-settings` parameter for configuring schema settings
+- Added `x-toolbar` parameter for configuring schema toolbar
+- Added `SchemaToolbar` component for customizing schema toolbar
+- Added `useSchemaToolbarRender()` to replace the original `useDesigner()`
+- Changed `function SchemaSettings` to `class SchemaSettings` for defining settings
+- Changed the original `SchemaSettings` to `SchemaSettingsDropdown`
 - Changed `SchemaSettings.Item` to `SchemaSettingsItem`
 - Changed `SchemaSettings.ItemGroup` to `SchemaSettingsItemGroup`
 - Changed `SchemaSettings.SubMenu` to `SchemaSettingsSubMenu`
 - Changed `SchemaSettings.Divider` to `SchemaSettingsDivider`
 - Changed `SchemaSettings.Remove` to `SchemaSettingsRemove`
-- Change `SchemaSettings.SelectItem` to `SchemaSettingsSelectItem`
+- Changed `SchemaSettings.SelectItem` to `SchemaSettingsSelectItem`
 - Changed `SchemaSettings.CascaderItem` to `SchemaSettingsCascaderItem`
-- Change `SchemaSettings.SwitchItem` to `SchemaSettingsSwitchItem`
+- Changed `SchemaSettings.SwitchItem` to `SchemaSettingsSwitchItem`
 - Changed `SchemaSettings.ModalItem` to `SchemaSettingsModalItem`
-- Change `SchemaSettings.ActionModalItem` to `SchemaSettingsActionModalItem`
-- Remove `x-designer` parameter is deprecated and will be removed in the future, use `x-toolbar` instead.
-- Remove `useDesigner()` deprecated and will be removed in the future, use `useSchemaToolbarRender()` instead.
+- Changed `SchemaSettings.ActionModalItem` to `SchemaSettingsActionModalItem`
+- Deleted `x-designer` parameter, deprecated, will be removed in the future, use `x-toolbar` instead
+- Deleted `useDesigner()`, deprecated, will be removed in the future, use `useSchemaToolbarRender()` instead
 
-See [Incompatible changes in NocoBase 0.17](https://docs.nocobase.com/welcome/release/upgrade-to/v017) for more details.
+For more details, see [Incompatible Changes in NocoBase 0.17](https://docs.nocobase.com/welcome/release/upgrade-to/v017)
