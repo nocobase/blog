@@ -11,6 +11,8 @@ ogImage: ""
 description: ""
 ---
 
+## Table of contents
+
 ## New features in the second quarter
 
 - Association field component improvements, support for multiple component switching
