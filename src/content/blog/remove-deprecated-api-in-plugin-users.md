@@ -10,7 +10,7 @@ ogImage: ""
 description: ""
 ---
 
-In the v0.10 version released in June, the user authentication functionality in the User plugin(`@nocobase/plugin-users`) has been replaced by the Auth plugin(`@nocobase/plugin-auth`). The authentication-related APIs, like sign in and sign up, provided by the User plugin have been depreacted. For more details, refer to [NocoBase 0.10: New features in the second quarter#signin/signup api changes](./release-v010#signinsignup-api-changes).
+In the v0.10 version released in June, the user authentication functionality in the User plugin(`@nocobase/plugin-users`) has been replaced by the Auth plugin(`@nocobase/plugin-auth`). The authentication-related APIs, like sign in and sign up, provided by the User plugin have been depreacted. For more details, refer to [NocoBase 0.10: New features in the second quarter#signin/signup api changes](/posts/release-v010#signinsignup-api-changes).
 
 ```bash
 /api/users:signin -> /api/auth:signIn
