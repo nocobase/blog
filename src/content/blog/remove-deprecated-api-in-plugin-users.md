@@ -1,11 +1,12 @@
 ---
-pubDatetime: 2023-12-04T00:55:00Z
-title: "Note：Authentication-related APIs in Users plugin have been removed"
+pubDatetime: 2023-12-04T08:55:00Z
+title: "Removed：drepcated authentication APIs in Users plugin"
 postSlug: remove-deprecated-api-in-plugin-users 
 # featured: true
 draft: false
 tags:
-  - deprecated
+  - removed
+  - auth
 ogImage: ""
 description: ""
 ---
