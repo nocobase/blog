@@ -160,7 +160,7 @@ yarn e2e start-app
 
 ### Optimization of auth plugin
 
-- Auth extension development guide [https://docs.nocobase.com/plugins/auth/dev](https://docs.nocobase.com/plugins/auth/dev)
+- Auth extension development guide [https://docs.nocobase.com/plugins/auth/dev/guide](https://docs.nocobase.com/plugins/auth/dev/guide)
 - Breaking changes [https://docs.nocobase.com/breaking-changes/v0-18-0-alpha-1](https://docs.nocobase.com/breaking-changes/v0-18-0-alpha-1)
 
 ### Modular decomposition into plugins
