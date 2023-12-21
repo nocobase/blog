@@ -160,8 +160,8 @@ yarn e2e start-app
 
 ### Optimization of auth plugin
 
-- Auth extension development guide [https://docs-cn.nocobase.com/plugins/auth/dev](https://docs-cn.nocobase.com/plugins/auth/dev)
-- Breaking changes [https://docs-cn.nocobase.com/breaking-changes/v0-18-0-alpha-1](https://docs-cn.nocobase.com/breaking-changes/v0-18-0-alpha-1)
+- Auth extension development guide [https://docs.nocobase.com/plugins/auth/dev](https://docs.nocobase.com/plugins/auth/dev)
+- Breaking changes [https://docs.nocobase.com/breaking-changes/v0-18-0-alpha-1](https://docs.nocobase.com/breaking-changes/v0-18-0-alpha-1)
 
 ### Modular decomposition into plugins
 
@@ -186,4 +186,4 @@ In order to refine the kernel and make it more streamlined, certain functionalit
 | Workflow - Request             | @nocobase/plugin-workflow-request             |
 | Workflow - SQL                 | @nocobase/plugin-workflow-sql                 |
 
-See [complete list of plugins](https://docs-cn.nocobase.com/plugins) for details. The document is currently under construction, with some content possibly missing or awaiting translation. You can follow [nocobase/docs](https://github.com/nocobase/docs) for updates.
+See [complete list of plugins](https://docs.nocobase.com/plugins) for details. The document is currently under construction, with some content possibly missing or awaiting translation. You can follow [nocobase/docs](https://github.com/nocobase/docs) for updates.
