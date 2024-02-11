@@ -4,7 +4,7 @@ export const SITE: Site = {
   website: "https://blog.nocobase.com/",
   author: "NocoBase team",
   desc: "NocoBase is a scalability-first, open-source no-code/low-code platform to build internal tools.",
-  title: "NocoBase",
+  title: "NocoBase Blog",
   ogImage: "nocobase-og.png",
   lightAndDarkMode: true,
   postPerPage: 20,
