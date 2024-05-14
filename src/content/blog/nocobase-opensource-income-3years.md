@@ -166,5 +166,5 @@ We don't have a sales team and won't have one for a long time. We aim to attract
 
 We don't have a detailed schedule or a growth plan, but we can be confident that our six-year plan has just passed its midpoint. Over the next 1000 days, we will still have commits almost every day, and NocoBase will continue to improve day by day.
 
-Of course, we also look forward to connecting with more exciting stories and dancing closely with them. If your company is using or planning to try NocoBase, or if you're interested in participating in its development, feel free to get in touch with us.
+Of course, we also look forward to connecting with more exciting stories and dancing closely with them. If your company is using or planning to try NocoBase, or if you're interested in participating in its development, feel free to [get in touch with us](https://github.com/nocobase/nocobase "NocoBase").
 
