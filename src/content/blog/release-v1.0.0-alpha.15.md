@@ -1,6 +1,6 @@
 ---
 pubDatetime: 2024-05-19T22:35:21Z
-title: "NocoBase 1.0.0-alpha.15: New Plugins and Improved  "Configure actions" Interaction"
+title: 'NocoBase 1.0.0-alpha.15: New Plugins and Improved "Configure actions" Interaction'
 postSlug: release-v1.0.0-alpha.15
 # featured: true
 draft: false
