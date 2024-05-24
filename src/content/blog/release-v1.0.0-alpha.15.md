@@ -1,6 +1,6 @@
 ---
 pubDatetime: 2024-05-19T22:35:21Z
-title: "NocoBase 1.0.0-alpha.15: New Plugins and Improved  "Configure actions" Interaction"
+title: "NocoBase 1.0.0-alpha.15: New Plugins and Improved  'Configure actions' Interaction"
 postSlug: release-v1.0.0-alpha.15
 # featured: true
 draft: false
@@ -16,13 +16,13 @@ description: ""
 
 ### Auth plugin: LDAP authentication
 
-Supports users logging in to NocoBase using their LDAP server credentials. For more information, refer to the [Authentication: LDAP](/handbook/auth-ldap) documentation.
+Supports users logging in to NocoBase using their LDAP server credentials. For more information, refer to the [Authentication: LDAP](https://docs.nocobase.com/handbook/auth-ldap) documentation.
 
 ![](https://static-docs.nocobase.com/202405191513995.png)
 
 ### Workflow plugin: custom action trigger
 
-When CRUD actions cannot satisfy your needs, you can use the custom action trigger of the workflow to orchestrate your own data processing logic. For more information, refer to the [Workflow / Custom action trigger](/handbook/workflow/plugins/custom-action-trigger) documentation.
+When CRUD actions cannot satisfy your needs, you can use the custom action trigger of the workflow to orchestrate your own data processing logic. For more information, refer to the [Workflow / Custom action trigger](https://docs.nocobase.com/handbook/workflow/plugins/custom-action-trigger) documentation.
 
 ![](https://static-docs.nocobase.com/202405191515770.png)
 
@@ -50,7 +50,7 @@ Allows configuring the visible and hidden properties of fields.
 
 ### Plugin samples for development
 
-View the documentation for [plugin examples](/plugin-samples).
+View the documentation for [plugin examples](https://docs.nocobase.com/plugin-samples).
 
 ![20240521105056](https://static-docs.nocobase.com/20240521105056.png)
 
