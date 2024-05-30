@@ -19,8 +19,6 @@ description: ""
 
 ### Plugin configuration page registration API
 
-以前使用 `SettingsCenterProvider` 注册插件配置页面，现在需要通过插件注册。
-
 Previously, the plugin configuration page was registered using `SettingsCenterProvider`, and now it needs to be registered through the plugin.
 
 - Case 1: There is only one Tab on the original page

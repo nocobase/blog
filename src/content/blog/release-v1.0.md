@@ -331,7 +331,7 @@ Please follow these steps to upgrade:
 
 #### 1. Upgrade the Application
 
-Refer to [NocoBase Upgrade Overview](/welcome/getting-started/upgrading), and upgrade NocoBase to the latest version.
+Refer to [NocoBase Upgrade Overview](https://docs.nocobase.com/welcome/getting-started/upgrading), and upgrade NocoBase to the latest version.
 
 If you previously enabled CAS, OIDC, SAML plugins, you will see the following prompts during the upgrade:
 

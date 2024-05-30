@@ -16,77 +16,77 @@ description: ""
 
 ### Support for Multiple Data Sources
 
-Added the "[Data Source Manager](/handbook/data-source-manager)" plugin, used to manage all collections and fields for data sources. The Data Source Manager plugin provides a centralized interface for managing data sources and does not provide the capability to access data sources. It needs to be used in conjunction with various data source plugins. Currently supported data sources include:
+Added the "[Data Source Manager](https://docs.nocobase.com/handbook/data-source-manager)" plugin, used to manage all collections and fields for data sources. The Data Source Manager plugin provides a centralized interface for managing data sources and does not provide the capability to access data sources. It needs to be used in conjunction with various data source plugins. Currently supported data sources include:
 
-- [Main Database](/handbook/data-source-main): NocoBase main database, supporting relational databases such as MySQL, PostgreSQL, SQLite, etc.
-- [External MySQL Data Source](/handbook/data-source-external-mysql): Access an existing MySQL database as a data source.
-- [External MariaDB Data Source](/handbook/data-source-external-mariadb): Access an existing MariaDB database as a data source.
-- [External PostgreSQL Data Source](/handbook/data-source-external-postgres): Access an existing PostgreSQL database as a data source.
+- [Main Database](https://docs.nocobase.com/handbook/data-source-main): NocoBase main database, supporting relational databases such as MySQL, PostgreSQL, SQLite, etc.
+- [External MySQL Data Source](https://docs.nocobase.com/handbook/data-source-external-mysql): Access an existing MySQL database as a data source.
+- [External MariaDB Data Source](https://docs.nocobase.com/handbook/data-source-external-mariadb): Access an existing MariaDB database as a data source.
+- [External PostgreSQL Data Source](https://docs.nocobase.com/handbook/data-source-external-postgres): Access an existing PostgreSQL database as a data source.
 
 In addition, more data sources can be extended, which can be common types of databases or platforms that provide APIs (SDKs).
 
-![Data Source Manager](https://docs.nocobase.com/static/image.3a9f5057.png)
+![Data Source Manager](https://static-docs.nocobase.com/fe8ecdaf640097eeb310c94a997b9090.png)
 
 ### Adjustment to Collections Management
 
 Moved the original "Collection Manager" to "Data Source > Main Database > Configuration".
 
-![Main Database Configuration](https://docs.nocobase.com/static/20240303172205_rec_.5d6549a8.gif)
+![Main Database Configuration](https://static-docs.nocobase.com/b5ad882a131e447f78b0c22a92ec9df6.gif)
 
 ### Support for Non-ID Fields as Primary and Relationship Constraints
 
 When creating a collection, you can choose not to create an ID field.
 
-![Predefined Fields](https://docs.nocobase.com/static/image-1.ce111045.png)
+![Predefined Fields](https://static-docs.nocobase.com/87dc4101a884f97cbfce00f1891f7cf6.png)
 
 Integer fields can be used as primary keys.
 
-![Integer fields can be used as primary keys](https://docs.nocobase.com/static/image-3.b9c0f37d.png)
+![Integer fields can be used as primary keys](https://static-docs.nocobase.com/cce37d7d8e9feaa66970da0c643a2d9d.png)
 
 Single-line text fields can also be used as primary keys.
 
-![Single-line text fields can also be used as primary keys](https://docs.nocobase.com/static/image-2.3bf241d5.png)
+![Single-line text fields can also be used as primary keys](https://static-docs.nocobase.com/b2c797f52bedfcfa06936a244dd9be4b.png)
 
 Relationship constraints support selecting other fields with Unique indexes set as non-primary key fields.
 
-![](https://docs.nocobase.com/static/image-17.35e9182a.png)
+![](https://static-docs.nocobase.com/e5515e58426c5be08ba982b0bb311410.png)
 
 ### Adjustment to Drag-and-Drop Sorting
 
 Added a "Sort" type field. Sorting fields are no longer automatically generated when creating collections and need to be manually created.
 
-![](https://docs.nocobase.com/static/image-4.9239a4b8.png)
+![](https://static-docs.nocobase.com/470891c7bb34c506328c1f3824a6cf20.png)
 
 When selecting a field as a group, grouping will be done before sorting.
 
-![](https://docs.nocobase.com/static/image-5.6c0bb2cd.png)
+![](https://static-docs.nocobase.com/0794d0a9c0dc288a8fc924a3542bb86e.png)
 
 When enabling drag-and-drop sorting in table block, you need to select the sorting field.
 
-![](https://docs.nocobase.com/static/image-7.fdd47074.png)
+![](https://static-docs.nocobase.com/20cf12fd7ca3d8c0aa1917a95c0a7e7c.png)
 
 When creating a Kanban block, you need to select the sorting field.
 
-![](https://docs.nocobase.com/static/image-6.845d4d00.png)
+![](https://static-docs.nocobase.com/b810265790d6a1ec099e3d88d1361271.png)
 
 
 ### Adjustment to User and Permission Interfaces
 
 Added user management interface and unified user and role management under one menu.
 
-![](https://docs.nocobase.com/static/image-8.83592395.png)
+![](https://static-docs.nocobase.com/7be26746652098f07ce105dbae373522.png)
 
 Adjusted the role management interface to facilitate the management of user-associated roles, permissions, departments, etc.
 
-![](https://docs.nocobase.com/static/image-9.deb1e3e3.png)
+![](https://static-docs.nocobase.com/4ec942af764dfcec1ddc9a244816a6ee.png)
 
 Moved the original "Action Permissions" to the "Data Source" tab.
 
-![](https://docs.nocobase.com/static/20240303170947_rec_.91ee3e13.gif)
+![](https://static-docs.nocobase.com/461ab881fe94a33f9a122e9734b85f4d.gif)
 
 ### Department Plugin
 
-![](https://docs.nocobase.com/static/image-18.c6c13198.png)
+![](https://static-docs.nocobase.com/093473d9c23a789d41899df9bcaf3389.png)
 
 Organize users by departments, set hierarchical relationships, link roles to control permissions, and use departments as variables in workflows and expressions.
 
@@ -96,37 +96,37 @@ The approval plugin provides dedicated workflow types (triggers) "Initiate Appro
 
 Approval configuration
 
-![Approval Configuration](https://docs.nocobase.com/static/image-10.6b749291.png)
+![Approval Configuration](https://static-docs.nocobase.com/21acc5615ecc03aeeb44671ab945baea.png)
 
 Approval process
 
-![Approval Process](https://docs.nocobase.com/static/image-11.7a4bf88b.png)
+![Approval Process](https://static-docs.nocobase.com/6a879641bd15de0648cd4602779ef9fa.png)
 
-Further details can be found in the documentation: [Workflow Approval](/handbook/workflow-approval)
+Further details can be found in the documentation: [Workflow Approval](https://docs.nocobase.com/handbook/workflow/plugins/approval)
 
 ### Workflow: End Process Node
 
 This node immediately ends the current execution of the workflow when executed and ends with the status configured in the node. It is typically used for specific logic flow control, to exit the current workflow after meeting certain logical conditions, without continuing with subsequent processing. It can be likened to the return command in programming languages, used to exit the currently executing function.
 
-![](https://docs.nocobase.com/static/image-16.63d029b2.png)
+![](https://static-docs.nocobase.com/38d6352211d791fd4233f5cd4bdb34f2.png)
 
-Further details can be found in the documentation: [End Process Node](/handbook/workflow/manual/nodes/end)
+Further details can be found in the documentation: [End Process Node](https://docs.nocobase.com/handbook/workflow/nodes/end)
 
 ### Workflow: Custom Variable Node
 
 Variables can be declared in the workflow or assigned values to previously declared variables, typically used to store temporary data in the workflow. It is suitable for scenarios where calculation results need to be stored for later use outside the branch (such as loops, parallelism, etc.).
 
-![](https://docs.nocobase.com/static/image-12.c6b7d588.png)
+![](https://static-docs.nocobase.com/c19913f99968d987a52aaa53578a7318.png)
 
-Further details can be found in the documentation: [Custom Variable Node](/handbook/workflow-variable)
+Further details can be found in the documentation: [Custom Variable Node](https://docs.nocobase.com/handbook/workflow/plugins/variable)
 
 ### Workflow: Request Interceptor
 
 The request interceptor plugin provides a mechanism to intercept operations on forms, where the interception event is triggered after the corresponding form operation is submitted and before it is processed. If a "End Process" node is executed in the subsequent process flow after triggering, or if other nodes fail to execute (errors or other incomplete executions), the form operation will be intercepted, otherwise the scheduled operation will be executed normally. It can be used for business validation or logic checks to approve or intercept client-submitted create, update, and delete operations.
 
-![](https://docs.nocobase.com/static/image-13.828bd2ef.png)
+![](https://static-docs.nocobase.com/3f3991aaf9d73b8c2f7c179e7702d16b.png)
 
-Further details can be found in the documentation: [Request Interceptor](/handbook/workflow-request-interceptor)
+Further details can be found in the documentation: [Request Interceptor](https://docs.nocobase.com/handbook/workflow/triggers/pre-action)
 
 ### Workflow: Response Message Node
 
@@ -134,13 +134,13 @@ The response message node is used to provide feedback to the client with custom 
 
 Node configuration
 
-![](https://docs.nocobase.com/static/image-14.43433f3e.png)
+![](https://static-docs.nocobase.com/4376843af541ef6a08696e074cb6cd07.png)
 
 Prompt message
 
-![](https://docs.nocobase.com/static/image-15.03094f30.png)
+![](https://static-docs.nocobase.com/051f12855bd0ce74b22de191b8b87cf5.png)
 
-Further details can be found in the documentation: [Response Message Node](/handbook/workflow-response-message)
+Further details can be found in the documentation: [Response Message Node](https://docs.nocobase.com/handbook/workflow/plugins/response-message)
 
 ## Incompatible Changes
 
