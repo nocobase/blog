@@ -24,7 +24,7 @@ description: ""
 
 <br />
 
-[For more information, see the [Data Visualization] documentation](/handbook/data-visualization)
+[For more information, see the [Data Visualization] documentation](https://docs.nocobase.com/handbook/data-visualization)
 
 ### Multi-DataSource support for workflow
 
@@ -32,7 +32,7 @@ description: ""
 
 <br />
 
-[For more information, see the [Workflow] documentation](/handbook/workflow)
+[For more information, see the [Workflow] documentation](https://docs.nocobase.com/handbook/workflow)
 
 ### Optimization of workflow Trigger Events
 
@@ -53,7 +53,7 @@ Enhancements to trigger mode configuration for the following events:
 
 <br />
 
-[For more information, see the [Workflow - Post-action events] documentation](/handbook/workflow-action-trigger)
+[For more information, see the [Workflow - Post-action events] documentation](https://docs.nocobase.com/handbook/workflow/plugins/action-trigger)
 
 #### Pre-action events
 
@@ -61,7 +61,7 @@ Enhancements to trigger mode configuration for the following events:
 
 <br />
 
-[For more information, see the [Workflow - Pre-action events] documentation](/handbook/workflow-request-interceptor)
+[For more information, see the [Workflow - Pre-action events] documentation](https://docs.nocobase.com/handbook/workflow/plugins/request-interceptor)
 
 ### Custom brand Plugin
 
@@ -69,7 +69,7 @@ Enhancements to trigger mode configuration for the following events:
 
 <br />
 
-[For more information, see the [Custom Branding] documentation](/handbook/custom-brand)
+[For more information, see the [Custom Branding] documentation](https://docs.nocobase.com/handbook/custom-brand)
 
 ### Support for nanoid field
 
@@ -77,7 +77,7 @@ Enhancements to trigger mode configuration for the following events:
 
 <br />
 
-[For more information, see the [nanoid field] documentation](/handbook/data-modeling/collection-fields/advanced/nanoid)
+[For more information, see the [nanoid field] documentation](https://docs.nocobase.com/handbook/data-modeling/collection-fields/advanced/nano-id)
 
 ### Support for uuid field
 
@@ -85,7 +85,7 @@ Enhancements to trigger mode configuration for the following events:
 
 <br />
 
-[For more information, see the [uuid field] documentation](/handbook/data-modeling/collection-fields/advanced/uuid)
+[For more information, see the [uuid field] documentation](https://docs.nocobase.com/handbook/data-modeling/collection-fields/advanced/uuid)
 
 ### Support for unix timestamp field
 
@@ -93,7 +93,7 @@ Enhancements to trigger mode configuration for the following events:
 
 <br />
 
-[For more information, see the [Unix timestamp field] documentation](/handbook/data-modeling/collection-fields/datetime/unix-timestamp)
+[For more information, see the [Unix timestamp field] documentation](https://docs.nocobase.com/handbook/data-modeling/collection-fields/datetime/unix-timestamp)
 
 ### Number type field supports formatting configuration
 
@@ -101,7 +101,7 @@ Enhancements to trigger mode configuration for the following events:
 
 <br />
 
-[For more information, see the [Field configure / Specific property settings / Number component] documentation](/handbook/ui/fields/field-settings/input-number)
+[For more information, see the [Field configure / Specific property settings / Number component] documentation](https://docs.nocobase.com/handbook/ui/fields/field-settings/number-format)
 
 ### Support for subpath deployment
 
