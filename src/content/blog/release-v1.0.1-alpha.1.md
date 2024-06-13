@@ -35,7 +35,7 @@ Support configuring variables in the URL or search params.
 
 Reference document:
 
-- [Link action]([/handbook/ui/actions/types/link](https://docs.nocobase.com/handbook/ui/actions/types/link))
+- [Link action](https://docs.nocobase.com/handbook/ui/actions/types/link)
 
 ### Add a new variable called "URL search params" (<a href="https://github.com/nocobase/nocobase/pull/4506" target="_blank">#4506</a>)
 
